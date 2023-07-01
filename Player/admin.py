@@ -12,6 +12,6 @@ class CustomPlayerAdmin(UserAdmin):
     add_form = CustomPlayerCreationForm
     form = CustomPlayerChangeForm
     model = CustomPlayer
-    list_display = ['email', 'username',]
+    list_display = ['email', 'username', 'birthday']
 
-admin.site.register(CustomPlayer, CustomPlayerAdmin)
+admin.site.register(CustomPlayer)

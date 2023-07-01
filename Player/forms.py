@@ -6,10 +6,10 @@ class CustomPlayerCreationForm(UserCreationForm):
 
     class Meta:
         model = CustomPlayer
-        fields = ('username', 'email')
+        fields = ('username', 'email', 'birthday')
 
 class CustomPlayerChangeForm(UserChangeForm):
 
     class Meta:
         model = CustomPlayer
-        fields = ('username', 'email')
+        fields = ('username', 'email', 'birthday')
